@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DOM1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <style>
+    *{
+      font-family: 'VT323', monospace;
+    }
+    body{
+      background-color: rgb(33, 33, 33);
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body >
+  <div class="container border m-2-2-2-2">
+    <div class="item text-light text-center fs-2 ">
+      <h1>😁 Guessing Game!!!</h1>
+      <button type="button" class="again btn btn-light m-2-2-2-2">Try Again</button>
+    </div>
+    <div class="item">
+      <input type="text" placeholder="?" class="answer text-center fs-4 m-2 " id="exampleInputEmail1" aria-describedby="emailHelp"
+        row-1>
+    </div>
+    <div class="item p-4 text-light fs-2 ">
+      <h2>( Number Between 1 to 50 )</h2>
+    </div>
+    <div>
+      <h1 class="text-light head1">Let's Start the Game 😎</h1>
+    </div>
+    <div class="item">
+      <input type="number" class="form-control fs-2  m-2 p-3" id="exampleInputEmail1" aria-describedby="emailHelp"
+        row-2>
+      <button type="button" class="btn check btn-primary m-2 w-100">Check</button>
+      <h3 class="text-light">Score :<span class="score p-2">20</span></h3>
+      <h3 class="text-light">Highest-Score :<span class="hiScore p-2">0</span></h3>
+    </div>
+  </div>
+  <script src="script31.js"></script>
+</body>
+
+</html>
